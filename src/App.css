@@ -1,0 +1,30 @@
+.wrapper {
+  padding-top: 100px;
+  height: 3000px;
+}
+
+.info {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes scale {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}
+
+.loading {
+  font-size: 72px;
+  text-align: center;
+  animation-name: scale;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  transition: ease-in-out;
+}
+
+h1 {
+  font-size: 82px;
+}
