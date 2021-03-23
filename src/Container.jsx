@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Info } from "./Info";
 import { Loading } from "./Loading";
+import { fetchFromApi } from "./fetchFromApi";
 
 class Container extends Component {
   constructor() {
@@ -8,22 +9,8 @@ class Container extends Component {
     this.state = { loading: true };
   }
 
-  mockApiFetch = (success, timeout) => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (success) {
-          resolve({ status: "ready" });
-        } else {
-          reject({ status: "error" });
-        }
-      }, timeout);
-    });
-  };
-
-
-
   // We want to call the fake api when the app is Container is loaded
-  // this.mockApiFetch(true, 3000)
+  // fetchFromApi()
 
   render() {
     return (

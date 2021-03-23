@@ -1,9 +1,6 @@
-import React from "react";
-
-
 // FUNC COMPONENT
 
-export const ScrollDetect = (WrappedComponent) => ({ ...props }) => {
+export const ScrollDetect = (WrappedComponent) => function Component({...props}) {
   return <WrappedComponent {...props}/>;
 };
 
