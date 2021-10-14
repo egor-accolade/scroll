@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollDetect } from "./ScrollDetect";
+import { withScrollDetect } from "./withScrollDetect";
 
 const RawInfo = ({ scrolled }) => {
   return scrolled ? (
@@ -14,4 +14,4 @@ const RawInfo = ({ scrolled }) => {
   );
 };
 
-export const Info = ScrollDetect(RawInfo);
+export const Info = withScrollDetect(RawInfo);
